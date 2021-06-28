@@ -1,0 +1,29 @@
+.footer {
+    background-color: #232323;
+        &-content {
+            text-align: center;
+            max-width: 166px;
+            margin: 0 auto;
+            padding-top: 12rem;
+            padding-bottom: 5.3rem;
+        }
+        &-logo {
+            @include logo;
+            line-height: 35px;
+        }
+        &-slogan {
+            font-size: 16px;
+            line-height: 2.6rem;
+            font-family: $mainFontRegular;
+            letter-spacing: 0.4px;
+            margin-bottom: 24px;
+        }
+        &-social {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+                &__icon:hover {
+                    color: $blue;
+                }
+        }
+}

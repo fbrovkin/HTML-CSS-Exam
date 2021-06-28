@@ -1,0 +1,48 @@
+.reason {
+    background-image: url(./img/why-choose-us-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+        &-content {
+            padding: 120px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-text {
+            max-width: 48%;
+            padding-top: 8.4rem;
+        }
+        &__title {
+            @include title
+        }
+        &__info {
+            margin-top: 6.2rem;
+            color: #e8e8e8;
+            font-family: $mainFontRegular;
+            font-size: 16px;
+            line-height: 2.6rem;
+            white-space: break-spaces;
+        }
+        &__btn {
+            @include button;
+                &:hover {
+                    @include button-hover;
+                }
+        }
+        &-image {
+            width: 43%;
+            display: flex;
+            flex-direction: column;
+                &-img {
+                    max-width: 350px;
+                        &--top-image {
+                            align-self: flex-start;
+                        }
+                        &--btm-image {
+                            margin-top: 5px;
+                            align-self: flex-end;
+                        }
+                }
+                
+        }
+}

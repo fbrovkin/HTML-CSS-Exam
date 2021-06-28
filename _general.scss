@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "JosefinSansNormal";
+    src: url(./fonts/JosefinSans-Regular.ttf);
+}
+@font-face {
+    font-family: "JosefinSansLight";
+    src: url(./fonts/JosefinSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "JosefinSansBold";
+    src: url(./fonts/JosefinSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "AleoNormal";
+    src: url(./fonts/Aleo-Font/Desktop-OTF/Aleo-Regular.otf);
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+.page {
+    color: $white;
+}
+
+.wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+}

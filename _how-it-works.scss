@@ -1,0 +1,41 @@
+.work {
+    background-color: $grey;
+        &-principle {
+            padding: 10rem 6.6rem 11.9rem 6.6rem;
+            display: flex;
+            justify-content: space-between;
+                &__step {
+                    position: relative;
+                    text-align: center;
+                        &-magnifier {
+                            fill: $blue;
+                            width: 5.7rem;
+                            height: 5.8rem;
+                        }
+                        &-OK {
+                            fill: #ff6363;
+                            width: 6rem;
+                            height: 6.1rem;
+                        }
+                        &-thumbs-up {
+                            fill: #00a2ff;
+                            width: 6.2rem;
+                            height: 5.9rem;
+                        }
+                        &-descr {
+                            color: #e8e8e8;
+                            font-family: $secondaryFontNormal;
+                            font-size: 3.6rem;
+                            margin-top: 3.1rem;
+                        }
+                        &-dotted-arc {
+                            position: absolute;
+                            top: -50%;
+                            right: -115%;
+                            height: 50px;
+                            width: 405px;
+                        }
+                }
+                
+        }
+}

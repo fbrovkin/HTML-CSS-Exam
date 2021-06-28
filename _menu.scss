@@ -1,0 +1,123 @@
+.navigation {
+    position: sticky;
+    top: 0px;
+    z-index: 500;
+    background-color: $blue;
+        &-burger-menu {
+            display: none;
+                &__toggle {
+                    display: none;
+                        &:checked ~ .navigation-burger-menu__btn > .navigation-burger-menu__sticks {
+                            transform: rotate(45deg);
+                                &::before {
+                                    top: 0;
+                                    transform: rotate(0);
+                                }
+                                &::after {
+                                    top: 0;
+                                    transform: rotate(90deg);
+                                }
+                        }
+                        &:checked ~ .navigation-burger-menu__box {
+                            visibility: visible;
+                            right: 0;
+                        }
+                }
+                &__btn {
+                    display: flex;
+                    align-items: center;
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    width: 26px;
+                    height: 26px;
+                    cursor: pointer;
+                    z-index: 999;
+                    transition-duration: .25s;
+                }
+                &__box {
+                    display: block;
+                    position: fixed;
+                    visibility: hidden;
+                    top: 0;
+                    right: -100%;
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    padding: 80px 0;
+                    list-style: none;
+                    text-align: center;
+                    background-color: rgba($color: $blue, $alpha: .95);
+                    transition-duration: .25s;
+                }
+                &__item {
+                    transition-duration: .25s;
+                    font-family: $mainFontBold;
+                    font-size: 5rem;
+                    height: 15%;
+                    text-transform: uppercase;
+                }
+                &__link {
+                    text-decoration: none;
+                    color: $white;
+                }
+                &__item:hover {
+                    background-color: #CFD8DC;
+                }
+                &__sticks {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    background-color: $white;
+                        &::before, &::after {
+                            display: block;
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            background-color: $white;
+                        }
+                        &::before {
+                            content: '';
+                            top: -8px;
+                            transition-duration: .25s;
+                        }
+                        &::after {
+                            content: '';
+                            top: 8px;
+                            transition-duration: .25s; 
+                        }
+                }
+        }
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 28px 0;
+        }
+        &-menu {
+            display: flex;
+                &__item {
+                    margin-right: 4.2rem;
+                    font-family: $secondaryFontNormal;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid $blue;
+                        &:hover {
+                    border-bottom: 1px solid $white;
+                        }
+                        &--nomargin {
+                            margin-right: 0;
+                        }
+                }
+                &__link {
+                    text-decoration: none;
+                    color: $white;
+                }
+        }
+}
+
+.logo {
+    @include logo;
+}
+

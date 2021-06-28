@@ -1,0 +1,49 @@
+.country {
+    &-hosting {
+        background-image: url(./img/Spain-bg-house.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &-hiking {
+        background-image: url(./img/spain-bg-mountains.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &-block {
+        padding: 22.9rem 0 10rem 0;
+        display: flex;
+            &--right {
+                justify-content: flex-end;
+            }
+    }
+    &-card {
+        max-width: 540px;
+        padding: 5rem 3.2rem 5rem 3rem;
+        background-color: $cardGrey;
+        font-family: $mainFontRegular;
+    }
+    &__name {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+            &-city {
+                text-transform: uppercase;
+                font-size: 20px;
+                margin-top: 30px;
+            }
+    }
+    &__descr {
+        margin-top: 29px;
+        font-size: 16px;
+        color: #e8e8e8;
+        line-height: 26px;
+        letter-spacing: -1.5px;
+    }
+    &__btn {
+        @include button;
+        &:hover {
+            @include button-hover;
+        }
+    }
+}

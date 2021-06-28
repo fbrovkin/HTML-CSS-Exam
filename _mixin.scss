@@ -1,0 +1,33 @@
+@mixin logo ($fontSize: 2.4rem){
+    font-family: $mainFontBold;
+    font-size: $fontSize;
+    line-height: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+}
+
+@mixin button {
+    margin-top: 4.8rem;
+    height: 60px;
+    width: 225px;
+    background: linear-gradient(45deg, rgb(73, 107, 254) 40%, rgb(84, 116, 253) 2%);
+    font-family: $secondaryFontNormal;
+    font-size: 16px;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: $white;
+}
+
+@mixin  button-hover {
+    background: $white;
+    border: 2px solid $blue;
+    color: $blue;
+}
+
+@mixin title {
+    font-family: $secondaryFontNormal;
+    font-size: 3.6rem;
+    line-height: 2.6rem;
+}

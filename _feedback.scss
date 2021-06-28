@@ -1,0 +1,51 @@
+.feedback {
+    background-image: url(./img/what-our-tourist-say-bg.png);
+    background-position: center;
+    background-size: cover;
+        &-content {
+            padding-top: 12rem;
+            padding-bottom: 20rem;
+        }
+        &-title {
+            @include title;
+            text-align: center;
+                &-margin {
+                    margin-bottom: 9.4rem;
+                }
+        }
+        &-article {
+            width: 100%;
+            display: flex;
+                &__img {
+                    height: 100%;
+                }
+                &__block {
+                    background-color: $grey;
+                    padding: 0 5.4rem 4rem 6rem;
+                }
+                &__title {
+                    font-family: $mainFontRegular;
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    margin-top: 5rem;
+                }
+                &__text {
+                    position: relative;
+                    margin-top: 4rem;
+                    color: #e8e8e8;
+                    font-family: $mainFontLight;
+                    font-size: 16px;
+                    line-height: 26px;
+                    white-space: break-spaces;
+                    text-align: justify;
+                    word-spacing: -1px;
+                    letter-spacing: -0.5px;
+                        &-quote {
+                            position: absolute;
+                            font-size: 2rem;
+                            color: $blue;
+                            top: -1.5rem;
+                        }
+                }
+        }
+}
