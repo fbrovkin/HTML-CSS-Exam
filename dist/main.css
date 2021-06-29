@@ -346,10 +346,6 @@ html {
   color: #fff;
 }
 
-.navigation-burger-menu__item:hover {
-  background-color: #CFD8DC;
-}
-
 .navigation-burger-menu__sticks {
   display: block;
   position: absolute;
@@ -809,6 +805,9 @@ html {
   .feedback-article__text {
     margin-top: 6rem;
   }
+  .header-slogan {
+    letter-spacing: 4.3px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -915,6 +914,9 @@ html {
 @media screen and (max-width: 350px) {
   html {
     font-size: 6px;
+  }
+  .header-slogan {
+    letter-spacing: 3.3px;
   }
 }
 /*# sourceMappingURL=main.css.map */

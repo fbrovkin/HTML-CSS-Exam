@@ -59,6 +59,9 @@
                 margin-top: 6rem;
             }
     }
+    .header-slogan {
+        letter-spacing: 4.3px;
+    }
     
 }
 
@@ -150,5 +153,8 @@
 @media screen and (max-width: 350px) {
     html {
         font-size: 6px;
+    }
+    .header-slogan {
+        letter-spacing: 3.3px;
     }
 }
