@@ -136,6 +136,9 @@ html {
   border: none;
   outline: none;
   padding: 0;
+  border-radius: none;
+  font-size: 16px;
+  font-family: "JosefinSansNormal";
 }
 
 .header-form__search::-webkit-input-placeholder {
